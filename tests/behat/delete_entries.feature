@@ -4,10 +4,8 @@ Feature: Delete entries
   As an admin
   I need to be delete existing entries in the Entries page
 
-  Background: # TODO
-    Given the following entries exist:
-      | name          | description          |
-      | My Entry Name | My Entry Description |
+  Background:
+    # TODO
 
   Scenario: Delete an entry with javascript disabled
     # TODO

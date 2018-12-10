@@ -18,7 +18,7 @@ php admin/tool/behat/cli/run.php --tags="@tool_tallerbehat"
 
 ## License
 
-2018 Mitxel Moriana <tallerbehat@tresipunt.com>
+2018 Mitxel Moriana <mitxel@tresipunt.com>
 
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
