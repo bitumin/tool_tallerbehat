@@ -1,0 +1,43 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+     Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+     Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+     You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template tool_tallerbehat/entries_list
+     Template for the list of etries.
+     Classes required for JS:
+      * tool_tallerbehat_entries_list
+     Data attributes required for JS:
+      * data-entryid
+      * data-action
+     Context variables required for this template:
+    -
+     Example context (json):
+    {
+        "contents": "Here goes the list of entries",
+        "addlink": "#"
+    }
+}}
+<div class="tool_tallerbehat_entries_list">
+    <h2>{{#str}} helloworld , tool_tallerbehat {{/str}}</h2>
+    <p>{{#str}} youareviewing , tool_tallerbehat {{/str}}</p>
+    {{{contents}}}
+    <br>
+    <p>
+        <a role="button" href="{{addlink}}" class="btn btn-primary">{{#str}} newentry , tool_tallerbehat {{/str}}</a>
+    </p>
+</div>
+{{#js}}
+    require(['tool_tallerbehat/confirm'], function(c) {
+        c.init('[data-action=deleteentry]');
+    });
+{{/js}}
